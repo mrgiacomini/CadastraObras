@@ -6,6 +6,7 @@ package model;
 
 public class Funcionario implements java.io.Serializable {
     private static final long serialVersionUID = 1335421L;
+    private int id;
     private String nome;
     private String CPF;
    
@@ -32,6 +33,14 @@ public class Funcionario implements java.io.Serializable {
 
     public void setCPF(String CPF) {
         this.CPF = CPF;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
    

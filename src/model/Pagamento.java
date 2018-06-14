@@ -6,7 +6,7 @@ package model;
 
 public class Pagamento implements java.io.Serializable {
     private static final long serialVersionUID = 1335421L;
-    
+    private int id;
     private String valor;
     private int dia;
     private int mes;
@@ -63,6 +63,14 @@ public class Pagamento implements java.io.Serializable {
 
     public void setObra(Obra obra) {
         this.obra = obra;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
   
 
